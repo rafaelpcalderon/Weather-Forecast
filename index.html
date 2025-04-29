@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="search">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" name="city" id="location" value="" placeholder="Enter Your Location">
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="error-container">
+                <img src="/src/images/page-found-concept-illustration_114360-1869.png" alt="Error 404 :/" srcset="">
+            </div>
+
+            <div class="second-container">
+            <div class="weather-img">
+                <span>
+                   <img class="img" src="">
+                </span>
+            </div>
+            <div class="temperature">
+                <span class="celsius">
+                    <p class="temp"><span class="temp-number"> </span> °C</p>
+                    <p class="clouds"></p>
+                </span>
+            </div>
+
+            <div class="humidity-wind">
+                <div class="humidity">
+                    <span class="%">
+                        <i class="fa-solid fa-water"></i>
+                        <p class="humid"> <br> <span class="humid-percentage humidity-wind-size"></span> Humidity</p>
+                    </span>
+                </div>
+                
+                <div class="wind">
+                    <span class="speed">
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="wind-number-speed"> <br> <span class="wind-speed humidity-wind-size"></span> Wind </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="index.js" defer></script>
+</body>
+</html>
