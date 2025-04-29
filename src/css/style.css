@@ -18,7 +18,7 @@ main .container{
     justify-content: center;
     align-items: center;
     border-radius: 1em;
-    position: relative;
+    box-shadow: 1px 1px 10px 1px #000000;
 }
 
 main .container .second-container{
