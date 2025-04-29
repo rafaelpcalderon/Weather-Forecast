@@ -21,6 +21,9 @@ document.querySelector('.search-btn').addEventListener('click', () =>{
     const location = input.value.trim();
 
     if(location === ''){
+        containerAddInfo.style.display = 'none';
+        errorContainer.style.display = 'none';
+        container.classList.remove('margin-top');
         return;
     }
     accessData();
@@ -44,7 +47,7 @@ async function accessData(){
         const city = input.value;
         const data = await accessingCity(city);
     
-        if(data.cod === '404' || location === ''){
+        if(data.cod === '404'){
             containerAddInfo.style.display = 'none';
             errorContainer.style.display = 'flex';
             container.classList.add('margin-top');
